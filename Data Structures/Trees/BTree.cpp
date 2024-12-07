@@ -1,40 +1,61 @@
 #include <iostream>
+#include <cassert>
 #include <vector>
 using namespace std;
 
-template <typename T>
-class BinaryTree
-{
+template<typename T>
+class BinaryTree {
 private:
-    /* data */
-    T data{};
-    BinaryTree *right{};
-    BinaryTree *left{};
+    //To avoid creating node structure and so on
+	T data { };
+	BinaryTree* left { };
+	BinaryTree* right { };
 
 public:
-    BinaryTree(T Data) : data(Data) {};
-    void print_inorder(){
-        if(left) print_inorder(left);
-        cout << data <<" ";
-        if (right) print_inorder(right)
+	BinaryTree(T data) :
+			data(data) {
+	}
 
-    }
-    void add(const vector <int>& Data , const vector <char>& directions ){
-        BinaryTree* current = this;
-        for (int i =0 ; i < data.size() ; i++){
-            if ("L" == directions[i]){
-                if(!left) 
-                    current->left= new BinaryTree(data[i]),
-                    current= current->left;
-            }
-        }
-    }
+	void print_inorder() {
+		if(left)
+			left->print_inorder();
+		cout << data << " ";
+		if(right)
+			right->print_inorder();
+	}
 
-
-
-
-
-    
-
-    ~BinaryTree();
+	void add(vector<T> values, vector<char> direction) {
+		assert(values.size() == direction.size());
+		BinaryTree* current = this;
+		// iterate on the path, create all necessary nodes
+		for (int i = 0; i <  values.size(); ++i) {
+			if (direction[i] == 'L') {
+				if (!current->left)
+					current->left = new BinaryTree(values[i]);
+				else
+					assert(current->left->data == values[i]);
+				current = current->left;
+			} else {
+				if (!current->right)
+					current->right = new BinaryTree(values[i]);
+				else
+					assert(current->right->data == values[i]);
+				current = current->right;
+			}
+		}
+	}
 };
+
+int main() {
+	BinaryTree tree(1);
+	tree.add( { 2, 4, 7 }, { 'L', 'L', 'L' });
+	tree.add( { 2, 4, 8 }, { 'L', 'L', 'R' });
+	tree.add( { 2, 5, 9 }, { 'L', 'R', 'R' });
+	tree.add( { 1, 3, 2 }, { 'R', 'R', 'L' });
+
+	tree.print_inorder();
+	// 7 4 8 2 5 9 1 1 2 3
+
+	return 0;
+}
+
