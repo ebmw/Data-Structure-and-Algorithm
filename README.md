@@ -94,7 +94,7 @@ _TBD_
 _TBD_
 
 ### Trees
-- [BTree.cpp](./data-structures/Tree/) - implementing a simple binary tree with functions to add nodes and print the tree in-order
+- [BTree.cpp](./Data Structures/Trees/BTree.cpp) - implementing a simple binary tree with functions to add nodes and print the tree in-order
 
 ### Graphs
 _TBD_
