@@ -50,16 +50,16 @@ This repository contains a collection of C++ programming exercises, categorized 
 This section includes exercises on various algorithmic techniques:
 
 ### Backtracking
-- [Exercise 2](./Algorithms/Backtracking/) - Permutations of a string using recursion.
+- [Exercise 2](./algorithms/backtracking/) - Permutations of a string using recursion.
 
 ### Divide and Conquer
-- [Exercise 5](./Algorithms/Divide%20and%20Conquer/) - Finding the majority element in an array.
+- [Exercise 5](./algorithms/divide-and-conquer/) - Finding the majority element in an array.
 
 ### Sorting
-- [Exercise 5 (Lab 1)](./Algorithms/Sorting/) - Selection problem using bubble sort.
+- [Exercise 5 (Lab 1)](./algorithms/sorting/) - Selection problem using bubble sort.
 
 ### Searching
-- [Exercise 2 (Lab 2)](./Algorithms/Searching/) - Checking if a number is prime.
+- [Exercise 2 (Lab 2)](./algorithms/searching/) - Checking if a number is prime.
 
 ### Dynamic Programming
 _TBD_
@@ -71,41 +71,30 @@ _TBD_
 _TBD_
 
 ### Graph Algorithms
-- [Exercise 1](./Algorithms/Graph%20Algorithms/) - Word puzzle solution finding words in a 2D grid.
+- [Exercise 1](./algorithms/graph-algorithms/) - Word puzzle solution finding words in a 2D grid.
 
 ## Data Structures
 
 This section focuses on implementing and solving problems using various data structures.
 
 ### Arrays
-- [Exercise 3 (Lab 2)](./Data%20Structures/Arrays/) - Finding an index where the array value equals the index.
-- [Exercise 5 (Lab 2)](./Data%20Structures/Arrays/) - Finding a majority element in an array.
+- [Exercise 3 (Lab 2)](./data-structures/arrays/) - Finding an index where the array value equals the index.
+- [Exercise 5 (Lab 2)](./data-structures/arrays/) - Finding a majority element in an array.
 
 ### Hash Tables
-- [exo1.cpp](./Data%20Structures/Hash%20Tables/exo1.cpp) - Hash table implementation
-- [exo2.cpp](./Data%20Structures/Hash%20Tables/exo2.cpp) - Hash table exercises
+_TBD_
 
 ### Linked Lists
-- [singly_linked_list.cpp](./Data%20Structures/Linked%20list/singly_linked_list.cpp) - Singly linked list implementation
-
-### Lists
-- [SelectivePrint.cpp](./Data%20Structures/Lists/SelectivePrint.cpp) - Selective printing from lists
-- [Listunion.cpp](./Data%20Structures/Lists/Listunion.cpp) - List union operations
-- [Listintersection.cpp](./Data%20Structures/Lists/Listintersection.cpp) - List intersection operations
+_TBD_
 
 ### Stacks
-- [stack.cpp](./Data%20Structures/Stacks/stack.cpp) - Generic stack implementation
-- [isbalanced.cpp](./Data%20Structures/Stacks/isbalanced.cpp) - Parentheses balancing checker
-- [exo5.cpp](./Data%20Structures/Stacks/exo5.cpp) - Stack exercises
+_TBD_
 
 ### Queues
-- [queue.cpp](./Data%20Structures/Queus/queue.cpp) - Queue implementation
+_TBD_
 
 ### Trees
 - [BTree.cpp](./Data%20Structures/Trees/BTree.cpp) - implementing a simple binary tree with functions to add nodes and print the tree in-order
-- [AvlTree.cpp](./Data%20Structures/Trees/AvlTree.cpp) - implementing a simple Avl Tree with functions to add nodes (insert) and delete nodes also to print the tree inorder, function to visualize the tree
-- [treebasicopp.cpp](./Data%20Structures/Trees/treebasicopp.cpp) - Basic tree operations implementation
-- [nRandomTree.cpp](./Data%20Structures/Trees/nRandomTree.cpp) - Random tree generation implementation
 
 ### Graphs
 _TBD_
@@ -130,8 +119,8 @@ _TBD_
 _TBD_
 
 ### Templates
-- [Exercise 3](./OOP/Templates/) - Class template for a generic collection.
-- [Exercise 4](./OOP/Templates/) - Class template for an ordered collection.
+- [Exercise 3](./oop/templates/) - Class template for a generic collection.
+- [Exercise 4](./oop/templates/) - Class template for an ordered collection.
 
 ### Exception Handling
 _TBD_
@@ -163,11 +152,11 @@ _TBD_
 This section involves analyzing the time complexity of algorithms and comparing their performance.
 
 ### Analysis
-- [Exercise 1 (Lab 2)](./Algorithm%20Complexity/Analysis/) - Big-O analysis of program fragments.
+- [Exercise 1 (Lab 2)](./algorithm-complexity/analysis/) - Big-O analysis of program fragments.
 
 ### Comparison
-- [Exercise 1 (Lab 2)](./Algorithm%20Complexity/Comparison/) - Comparing running times of different algorithms.
-- [Exercise 4 (Lab 2)](./Algorithm%20Complexity/Comparison/) - Random permutation generation algorithms.
+- [Exercise 1 (Lab 2)](./algorithm-complexity/comparison/) - Comparing running times of different algorithms.
+- [Exercise 4 (Lab 2)](./algorithm-complexity/comparison/) - Random permutation generation algorithms.
 
 ## System-Level Programming
 
@@ -196,6 +185,3 @@ Feel free to add more exercises, improve existing solutions, or suggest new topi
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-### Additional things:
-Trying pull request 
