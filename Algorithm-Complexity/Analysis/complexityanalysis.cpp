@@ -94,6 +94,7 @@ int func6(int n)
     return sum;
 }
 
+
 void timeFunction(int (*func)(int), int n)
 {
     auto start = chrono::high_resolution_clock::now();
